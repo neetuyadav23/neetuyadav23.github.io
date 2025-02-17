@@ -1,0 +1,137 @@
+/* element.style {
+} */
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+head {
+    display: none;
+}
+meta {
+    display: none;
+}
+title {
+    display: none;
+}
+link {
+    display: none;
+}
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+::selection {
+    background: #19dd5d;
+    color: #fff;
+}
+body {
+    background-color: #000;
+    overflow-x: hidden;
+}
+body {
+    line-height: 1.2;
+    font-family: "Open Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #999;
+}
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: black;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+#about {
+    margin-top: 5rem; /* Adjust the spacing */
+  }
+  .hero-section {
+    min-height: 80vh; /* Instead of 100vh, reduce it */
+  }
+  #home {
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center; /* Centers vertically */
+    height: 60vh; /* Full viewport height */
+    text-align: center; /* Centers text */
+  }
+  
+  #home .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+/* Ensuring Image Aligns More to the Left */
+.profile-img {
+    width: 100%; /* Ensures the image fills its container */
+    height: auto; /* Keeps aspect ratio */
+    object-fit: cover; /* Prevents distortion */
+    display: block; /* Removes extra spacing */
+    margin-left: 0; /* Aligns image fully to the left */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 991px) {
+    .profile-img {
+        margin: 0 auto; /* Centers image on smaller screens */
+    }
+    .col-lg-4 {
+        text-align: center; /* Centers image on smaller screens */
+    }
+}
+.navbar-nav .nav-item .nav-link {
+    color: white !important; /* Ensures all menu items are white */
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #00FF00 !important; /* Optional: Change hover color (Green in this case) */
+}
+label {
+    color: white !important;
+}
+
+ 
+  
