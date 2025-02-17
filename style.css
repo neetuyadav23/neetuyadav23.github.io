@@ -132,6 +132,15 @@ body {
 label {
     color: white !important;
 }
+.card-body a[href*="docs.google.com"] {
+    color: white !important;
+    text-decoration: none; /* Optional: Removes underline */
+}
+
+.card-body a[href*="docs.google.com"]:hover {
+    color: green !important;
+}
+
 
  
   
