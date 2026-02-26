@@ -1,445 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WNV75PVKBF"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+    <meta charset="utf-8">
+    <title>Neetu Yadav | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  gtag('config', 'G-WNV75PVKBF');
-</script>
-        <meta charset="utf-8">
-        <title>Neetu Yadav | Portfolio</title>
-        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
-        <meta name="description" content="This is meta description">
-        <meta name="author" content="Themefisher">
-        <meta name="generator" content="Hugo 0.92.0">
-        <link rel="stylesheet" href="https://demo.gethugothemes.com/gofolium/site/plugins/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="https://demo.gethugothemes.com/gofolium/site/plugins/themify-icons/themify-icons.css">
-        <link rel="stylesheet" href="https://demo.gethugothemes.com/gofolium/site/scss/style.css" media="screen">
-        <link rel="shortcut icon" href="images/portfolio.png" type="image/x-icon">
-        <link rel="icon" href="me.jpg" type="image/x-icon">
-        <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    </head>
+    <!-- Themify Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/themify-icons/1.0.1/css/themify-icons.css">
+
+    <!-- Your Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" href="me.jpg" type="image/x-icon">
+</head>
+
 <body>
-    
-     <div class="preloader" style="display: none;"></div>
-     <div id="particles-js">
-        <canvas class="particles-js-canvas-el" width="167" height="983" style="width: 100%;height: 100%;"></canvas>
-     </div>
 
-    <header class="sticky-top bg-black">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-                <!-- Logo with flexbox to center it properly -->
-                 <a class="navbar-brand d-flex align-items-center mx-auto" href="#">
-                    <img src="nylogo.png" alt="Logo" class="navbar-logo" style="filter: none; mix-blend-mode: normal;">
-                 </a>
-                 <!-- Toggler button for mobile view -->
-                  <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navigation">
-                    <i class="ti-menu text-white">
-                        <!-- ::before -->
-                    </i>
-                  </button>
-                  <!-- Navbar links -->
-                   <div class="collapse navbar-collapse text-center" id="navigation">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#home">home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">about</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#skills-technologies">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#experience">experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects">projects</a>
-                        </li>
-                        
-                        <!-- <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li> -->
-                    </ul>
-                    <a href="#contact" class="btn btn-primary ml-lg-4">contact</a>
-                   </div>
-            </nav>
-        </div>
-        </header>
-        <style>
-            
-        /* Style the logo */
-        .navbar-logo {
-            filter: invert(1);
-            padding-top: 15px;
-            max-height: 107px;
-            /* Adjust size to your preference */
-            width: auto;
-        }
+<header class="sticky-top bg-dark">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <a class="navbar-brand mx-auto" href="#">
+                <img src="nylogo.png" alt="Logo" style="max-height:80px;">
+            </a>
 
-        /* Center logo properly in the navbar */
-        .navbar {
-            display: flex;
-            justify-content: center;
-            /* Center navbar content horizontally */
-            align-items: center;
-            /* Center navbar content vertically */
-            padding: 10px 0;
-            /* Add padding for spacing */
-        }
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation">
+                <i class="ti-menu text-white"></i>
+            </button>
 
-        /* This centers the navbar items (menu) horizontally */
-        .navbar-nav {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        /* Optional: Add custom margin for a better navbar spacing */
-        .navbar-brand {
-            margin-right: 20px;
-            /* Adjust to your preference */
-            margin-left: 20px;
-            /* Adjust to your preference */
-        }
-
-        /* Ensure the logo has proper size without overcrowding */
-        .navbar-brand {
-            padding: 0;
-        }
-    
-        </style>
-        <section class="section pb-0" id="home">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="display-1 font-weight-bold title mb-4">
-                            Hey, I'm Neetu Yadav
-                            <strong>!</strong>
-                        </h1>
-                        <p class="h3 mb-5">A Penultimate Student & Machine Learning Enthusiast</p>
-                        <ul class="list-inline social-icons">
-                            <li class="list-inline-item">
-                                <a href="https://github.com/neetuyadav23" target="_blank" rel="noopener noreferrer" class="social-icon">
-                                    <i class="ti-github">
-                                        <!-- ::before -->
-                                    </i>
-                                    <span class="social-name">GitHub</span>
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/in/neetuyadav23/" target="_blank" rel="noopener noreferrer" class="social-icon">
-                                    <i class="ti-linkedin">
-                                        <!-- ::before -->
-                                    </i>
-                                    <span class="social-name">LinkedIn</span>
-                                </a>
-                            </li>
-                            <!-- <li class="list-inline-item">
-                                <a href="#" target="_blank" rel="noopener noreferrer" class="social-icon">
-                                    <i class="ti-file">
-                                        <!-- ::before -->
-                                    <!-- </i>
-                                    <span class="social-name">Resume</span>
-                                </a>
-                            </li> --> 
-                            <li class="list-inline-item">
-                                <!-- <a href="mailto: neetuwork888@gmail.com" target="_blank"  class="social-icon"> -->
-                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=neetuwork888@gmail.com" target="_blank" class="social-icon">
-                                       <i class="ti-email">
-                                        <!-- ::before -->
-                                    </i>
-                                    <span class="social-name">Email</span>
-                                    </a>
-                            </li>
-                        </ul>
-                        <style>
-                            
-                        .social-icon {
-                            position: relative;
-                            display: inline-block;
-                        }
-
-                        .social-name {
-                            display: none;
-                            position: absolute;
-                            bottom: -40px;
-                            /* Adjust this value for positioning */
-                            left: 50%;
-                            transform: translateX(-50%);
-                            font-size: 14px;
-                            color: #ffffff;
-                            /* You can adjust the text color */
-                        }
-
-                        .social-icon:hover .social-name {
-                            display: block;
-                        }
-                    
-                        </style>
-                    </div>
-                </div>
+            <div class="collapse navbar-collapse text-center" id="navigation">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-primary ml-lg-4">Contact</a>
             </div>
-        </section>
+        </nav>
+    </div>
+</header>
 
+<!-- HOME -->
+<section class="py-5 text-center bg-light" id="home">
+    <div class="container">
+        <h1 class="display-4 font-weight-bold">
+            Hey, I'm Neetu Yadav !
+        </h1>
+        <p class="lead">Penultimate Student & Machine Learning Enthusiast</p>
 
+        <div class="mt-4">
+            <a href="https://github.com/neetuyadav23" target="_blank" class="mx-3">
+                <i class="ti-github h4"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/neetuyadav23/" target="_blank" class="mx-3">
+                <i class="ti-linkedin h4"></i>
+            </a>
+            <a href="mailto:neetuwork888@gmail.com" class="mx-3">
+                <i class="ti-email h4"></i>
+            </a>
+        </div>
+    </div>
+</section>
 
-       <section class="section pb-0" id="about">
+<!-- ABOUT -->
+<section class="py-5" id="about">
     <div class="container">
         <div class="row align-items-center">
-            <!-- Left side: Image (Takes 50%) -->
-            <div class="col-lg-5 col-md-12 text-center">
-                <img src="me.jpg" class="img-fluid rounded-lg mb-4 profile-img" alt="Profile Image">
+            <div class="col-md-5 text-center">
+                <img src="me.jpg" class="img-fluid rounded mb-4" alt="Profile">
             </div>
-            
-            <!-- Right side: Content (Takes 50%) -->
-            <div class="col-lg-7 col-md-12">
+            <div class="col-md-7">
                 <p>
-                    An ambitious Computer Science Engineering Pre-Final year student at Banasthali Vidyapith, with strong interests in <b>Machine Learning, Research and Full Stack Web Development.</b>
-                    Currently serving as <b>Co-Lead at OSCode BV </b>, <b>where I lead community initiatives, mentor junior members and drive strategic planning for tech events and open-source collaborations.</b>
-                    I was previously the <b>Technical Member at OSCode BV and ACM Chapter BV</b> where I developed our college chapter's website and led other tech events.
-                    Through my<b> web development internship at YHills</b>, I've gained practical industry experience and shared 
-                    this knowledge by teaching web development fundamentals to fellow students.
+                    I'm a Computer Science Engineering student passionate about
+                    <strong>Machine Learning, Research, and Full Stack Development.</strong>
                 </p>
                 <p>
-                    As the <b>Public Relations Lead at GirlScript Summer of Code</b>, I led a dynamic PR team that achieved a <b>record-breaking 27K+ registrations</b>,
-                    while fostering an environment of creativity and collaboration. My technical journey includes building websites, working on 
-                    foundational ML projects, and <b>leading my team to victory in the SIH Internal Hackathon</b>. I've also actively contributed to notable 
-                    open-source programs including <b>GSSoC, SSOC, and JWOC</b>.
-                </p>
-                <p>
-                    Beyond technical skills, I'm driven by the power of community and collaboration in tech. As an active member of <b>Codess.cafe and various tech communities</b> 
-                    , I focus on creating opportunities for knowledge sharing and growth while working towards greater representation in technology. 
-                    I'm always eager to take on new challenges that push the boundaries of my expertise.
+                    I enjoy building impactful projects, leading tech communities,
+                    and mentoring students in web development.
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="section pb-0" id="skills-technologies">
+<!-- SKILLS -->
+<section class="py-5 bg-light" id="skills">
     <div class="container">
+        <h2 class="mb-4">Skills & Technologies</h2>
         <div class="row">
-            <div class="col-lg-4">
-                <h2>Skills &amp; Technologies</h2>
+            <div class="col-md-6">
+                <h5>Languages</h5>
+                <p>C, C++, Python, HTML5, CSS3, MySQL</p>
             </div>
-            <div class="col-lg-8">
-                <div class="row justify-content-around">
-                    <div class="col-lg-5 col-sm-6 mb-4">
-                        <h4 class="title-border">Languages</h4>
-                        <p>C, C++, Python, HTML5, CSS3, MySQL, Latex</p>
-                    </div>
-                    <div class="col-lg-5 col-sm-6 mb-4">
-                        <h4 class="title-border">Frameworks</h4>
-                        <p>Bootstrap4</p>
-                        
-                    </div>
-                    <div class="col-lg-5 col-sm-6 mb-4">
-                        <h4 class="title-border">Developer Tools &amp; Platforms</h4>
-                        <p>Github, Jupyter Notebook, Google Colab, VS Code, Canva, Figma</p>
-                    </div>
-                    <div class="col-lg-5 col-sm-6 mb-4">
-                        <h4 class="title-border">Certifications</h4>
-                        <p>Postman API Fundamentals Student Expert</p>
-                    </div>
-                </div>
+            <div class="col-md-6">
+                <h5>Tools</h5>
+                <p>GitHub, Jupyter Notebook, VS Code, Figma</p>
             </div>
         </div>
     </div>
 </section>
 
+<!-- PROJECTS -->
+<section class="py-5" id="projects">
+    <div class="container">
+        <h2 class="mb-4">Projects</h2>
+        <div class="row">
 
-    <section class="section pb-0" id="experience">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h2>Experience</h2>
-                </div>
-                <div class="col-lg-8">
-                    <div class="row justify-content-around">
-                        <div class="col-lg-5 col-sm-6 mb-4">
-                            <h4 class="title-border">ACM Student Chapter Banasthali Vidyapith :  
-                                                     Web Developer</h4>
-                            <p> Designed & developed a responsive and user-friendly website using HTML5,CSS3 and Bootstrap, ensuring seamless 
-                                accessibility across different devices.</p>
-                            <p>Used version control (Git & GitHub) for efficient code collaboration &  a structured development workflow.</p>
-                            <p>Collaborated with team members & mentors to implement new features,optimize the website's performance and ensure
-                                 a modern,professional design.</p>
-                        </div>
-                        <div class="col-lg-5 col-sm-6 mb-4">
-                            <h4 class="title-border">OsCode x Banasthali : Technical Team Member</h4>
-                            <p> Conducted interactive sessions and workshops to teach fellow students the fundamentals of HTML and CSS, covering 
-                                essential topics such as semantic HTML, styling with CSS, and responsive design principles.
-                            </p>
-                            <!-- <p>Ensuring all the technical requirements are fulfilled at every event.</p> -->
-                            <p>Continuously learning & adapting to new tech methods and best practices to enhance team productivity and outcomes.</p>
-                            <p> Providing mentorship and support, fostering a culture of continuous improvement and knowledge sharing.</p>
-                        </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5>Portfolio Website</h5>
+                        <p>Built using HTML, CSS, Bootstrap.</p>
+                        <a href="https://github.com/neetuyadav23" target="_blank">View Project</a>
                     </div>
                 </div>
             </div>
+
         </div>
-    </section>
+    </div>
+</section>
 
-    
-    <section class="section pb-0" id="projects">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 mb-5">
-                    <h2>My Projects</h2>
-                </div>
+<!-- CONTACT -->
+<section class="py-5 bg-light" id="contact">
+    <div class="container">
+        <h2 class="mb-4">Contact Me</h2>
+        <p>Email: <a href="mailto:neetuwork888@gmail.com">neetuwork888@gmail.com</a></p>
+    </div>
+</section>
 
-                <!-- Face Recognition System Project -->
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <article class="card bg-dark rounded-0 border-0">
-                        <!-- <img src="images/Face Recognition System.jpg" alt="Face Recognition System" class="card-img-top mb-4 rounded-0"> -->
-                        <div class="card-body">
-                            <h4 class="mb-3"><a href="https://github.com/neetuyadav23/Portfolio-website" target="_blank">
-                                    Portfolio Website</a></h4>
-                            <p>Developed a personal portfolio website using <b>HTML, CSS, Bootstrap and JavaScript</b> 
-                                to showcase projects, skills, and experiences, creating a visually appealing and engaging platform to highlight expertise and attract opportunities.
-                        </div>
-                    </article>
-                </div>
-               
+<footer class="py-4 text-center bg-dark text-white">
+    © 2025 Neetu Yadav. Thank you for visiting!
+</footer>
 
-                <!-- To-Do List Web App Project -->
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <article class="card bg-dark rounded-0 border-0">
-                        <!-- <img src="images/To-Do List Web App.png" to-do="" list="" web="" app"="" class="card-img-top mb-4 rounded-0"> -->
-                        <div class="card-body">
-                            <h4 class="mb-3"><a href="https://github.com/neetuyadav23/starting_python/blob/main/sundry.py" target="_blank">
-                                    SUNDRY:Laundry Management System</a></h4>
-                                    <a href="https://docs.google.com/document/d/1VEgojIUoZcbEDQ6x2SnoC77RH9W9xkbL7oq4QjQTus0/edit?usp=sharing" target="_blank">Documentation</a>
-                            <p>Developed a <b>Laundry Store Database Management System using Python and MySQL</b> to efficiently store and manage customer 
-                                data. Implemented a <b>receipt generation feature</b> for seamless transactions and documented the 
-                                entire project for better usability and future enhancements.</p>
-                        </div>
-                    </article>
-                </div>
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 
-                
-                    </article>
-                </div>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <article class="card bg-dark rounded-0 border-0">
-                        <!-- <img src="images/imb movie.png" alt="IMDb Movie Rating Prediction" class="card-img-top mb-4 rounded-0"> -->
-                        <div class="card-body">
-                            <h4 class="mb-3"><a href="https://github.com/neetuyadav23/AyurVan" target="_blank">
-                                    Ayurवन</a></h4>
-                            <p>AyurVan is an AI-powered,gamified 3D virtual herbal garden that educates users on medicinal plants, offers personalized herbal
-                                remedy suggestions and integrates features like plant scanning, an AI garden designer, and a <b>multilingual chatbot.</b></p>
-                        </div>
-                    <article/>
-                <div/>
-
-
-
-                
-                <!-- All Projects Button -->
-                <div class="col-12 text-center mt-5">
-                    <a href="https://github.com/neetuyadav23" target="_blank" class="btn btn-primary btn-style">
-                        <!-- ::before -->
-                        All Projects
-                        <!-- ::after -->
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-   
-    <section class="section pb-0" id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 mb-5 mb-lg-0">
-                    <h2 class="mb-4 mb-lg-5">Contact Me</h2>
-                    <form action="https://api.web3forms.com/submit" method="POST">
-
-                        <!-- Replace with your Access Key -->
-                        <input type="hidden" name="access_key" value="cdf27139-4f42-4ab7-8fab-e90f3f17abc2">
-
-                        <!-- Form Inputs. Each input must have a name="" attribute -->
-                        <div class="form-group mb-4">
-                            <label for="name">Your Name</label>
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required="">
-                        </div>
-                        <div class="form-group mb-4">
-                            <label for="email">Your Email</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required="">
-                        </div>
-                        <div class="form-group mb-4">
-                            <label for="message">Your Message</label>
-                            <textarea class="form-control" id="message" name="message" placeholder="Your Message" required=""></textarea>
-                        </div>
-
-                        <!-- Honeypot Spam Protection -->
-                        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-                        <button class="btn btn-primary" type="submit">Send Now</button>
-                    </form>
-                </div>
-                <div class="col-lg-5 offset-lg-1">
-                    <h2 class="mb-4 mb-lg-5">Get In Touch</h2>
-                    <p class="mb-4 mb-lg-5">Let’s talk about working on tech and how I can help you or if you just want to
-                        chat about design and art - please drop a message at :</p>
-                    <ul class="list-unstyled">
-                        <li class="d-flex mb-4">
-                            <i class="ti-email h4 text-primary mr-3 mt-1">
-                                <!-- ::before -->
-                            </i>
-                            <p class="mb-0">
-                                <!-- <a href="mailto:neetuwork888@gmail.com" target="_blank">neetuwork888@gmail.com</a> -->
-                                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=neetuwork888@gmail.com" target="_blank" class="social-icon">
-                                    neetuwork888@gmail.com</a>
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <ul class="list-inline social-icons mb-5">
-                        <!-- <li class=list-inline-item><a href=#><i class=ti-facebook></i></a></li> -->
-                        <!-- <li class=list-inline-item><a href=#><i class=ti-twitter-alt></i></a></li> -->
-                        <!-- <li class=list-inline-item><a href=#><i class=ti-instagram></i></a></li> -->
-                        <li class="list-inline-item"><a href="https://github.com/neetuyadav23" target="_blank">
-                            <i class="ti-github">
-                                <!-- ::before -->
-                            </i>
-                        </a>
-                    </li>
-                        <li class="list-inline-item">
-                            <a href="https://www.linkedin.com/in/neetuyadav23/" target="_blank">
-                                <i class="ti-linkedin">
-                                    <!-- ::before -->
-                                </i>
-                            </a>
-                        </li>
-                    </ul>
-                    <hr class="mx-auto border-default" style="width:90px">
-                    <p class="mt-5">© 2025 Neetu Yadav. Thank you for visiting!</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-    <script src="https://demo.gethugothemes.com/gofolium/site/plugins/jQuery/jquery.min.js"></script>
-    <script src="https://demo.gethugothemes.com/gofolium/site/plugins/bootstrap/bootstrap.min.js"></script>
-    <script src="https://demo.gethugothemes.com/gofolium/site/plugins/particles/particles.min.js"></script>
-    <script src="https://demo.gethugothemes.com/gofolium/site/plugins/particles/stats.min.js"></script>
-    <script src="https://demo.gethugothemes.com/gofolium/site/plugins/reading-time/readingTime.min.js"></script>
-    <script src="https://demo.gethugothemes.com/gofolium/site/js/script.min.js"></script>
-    <body>
-        <div class="preloader" style="display: none;">
-        </div>
+</body>
+</html>
