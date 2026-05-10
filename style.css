@@ -1,146 +1,211 @@
-/* element.style {
-} */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-head {
-    display: none;
-}
-meta {
-    display: none;
-}
-title {
-    display: none;
-}
-link {
-    display: none;
-}
-:root {
-    --blue: #007bff;
-    --indigo: #6610f2;
-    --purple: #6f42c1;
-    --pink: #e83e8c;
-    --red: #dc3545;
-    --orange: #fd7e14;
-    --yellow: #ffc107;
-    --green: #28a745;
-    --teal: #20c997;
-    --cyan: #17a2b8;
-    --white: #fff;
-    --gray: #6c757d;
-    --gray-dark: #343a40;
-    --primary: #007bff;
-    --secondary: #6c757d;
-    --success: #28a745;
-    --info: #17a2b8;
-    --warning: #ffc107;
-    --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #343a40;
-    --breakpoint-xs: 0;
-    --breakpoint-sm: 576px;
-    --breakpoint-md: 768px;
-    --breakpoint-lg: 992px;
-    --breakpoint-xl: 1200px;
-    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-}
 html {
-    font-family: sans-serif;
-    line-height: 1.15;
-    -webkit-text-size-adjust: 100%;
-    -webkit-tap-highlight-color: transparent;
+  scroll-behavior: smooth;
 }
-*, ::after, ::before {
-    box-sizing: border-box;
-}
-::selection {
-    background: #19dd5d;
-    color: #fff;
-}
+
 body {
-    background-color: #000;
-    overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  background: #050816;
+  color: white;
+  overflow-x: hidden;
 }
-body {
-    line-height: 1.2;
-    font-family: "Open Sans", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    color: #999;
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: black;
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.1);
 }
-body {
-    display: block;
-    margin: 8px;
+
+.brand-logo {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #00ffcc !important;
 }
-#about {
-    margin-top: 5rem; /* Adjust the spacing */
+
+.nav-link {
+  color: white !important;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #00ffcc !important;
+}
+
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-tag {
+  color: #00ffcc;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.hero-title {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.hero-title span {
+  color: #00ffcc;
+}
+
+.hero-subtitle {
+  margin-top: 25px;
+  color: #bdbdbd;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 650px;
+}
+
+.hero-buttons {
+  margin-top: 40px;
+}
+
+.btn-main {
+  background: #00ffcc;
+  color: black;
+  border-radius: 40px;
+  padding: 14px 32px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-main:hover {
+  transform: translateY(-3px);
+  background: white;
+}
+
+.btn-outline-custom {
+  border: 1px solid rgba(255,255,255,0.2);
+  color: white;
+  border-radius: 40px;
+  padding: 14px 32px;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.btn-outline-custom:hover {
+  border-color: #00ffcc;
+  color: #00ffcc;
+}
+
+.profile-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.profile-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: -15px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #00ffcc, #0066ff);
+  filter: blur(35px);
+  opacity: 0.5;
+}
+
+.profile-image {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid rgba(255,255,255,0.2);
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.4rem;
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #00ffcc;
+}
+
+.section-space {
+  padding: 100px 0;
+}
+
+.section-title h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.glass-card {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 25px;
+  padding: 35px;
+  transition: 0.4s;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+  border-color: #00ffcc;
+}
+
+.skill-card h4,
+.project-card h3 {
+  margin-bottom: 20px;
+  color: #00ffcc;
+}
+
+.project-card a {
+  color: #00ffcc;
+  text-decoration: none;
+}
+
+.project-card a:hover {
+  color: white;
+}
+
+.contact-text {
+  color: #cfcfcf;
+  max-width: 700px;
+  margin: auto;
+}
+
+.footer {
+  padding: 30px 0;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: #9e9e9e;
+}
+
+@media(max-width: 768px) {
+  .hero-title {
+    font-size: 3.2rem;
   }
-  .hero-section {
-    min-height: 80vh; /* Instead of 100vh, reduce it */
+
+  .profile-image {
+    width: 250px;
+    height: 250px;
   }
-  #home {
-    display: flex;
-    justify-content: center; /* Centers horizontally */
-    align-items: center; /* Centers vertically */
-    height: 60vh; /* Full viewport height */
-    text-align: center; /* Centers text */
+
+  .btn-outline-custom {
+    margin-left: 0;
+    margin-top: 15px;
   }
-  
-  #home .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-/* Ensuring Image Aligns More to the Left */
-.profile-img {
-    width: 100%; /* Ensures the image fills its container */
-    height: auto; /* Keeps aspect ratio */
-    object-fit: cover; /* Prevents distortion */
-    display: block; /* Removes extra spacing */
-    margin-left: 0; /* Aligns image fully to the left */
 }
-
-/* Responsive Adjustments */
-@media (max-width: 991px) {
-    .profile-img {
-        margin: 0 auto; /* Centers image on smaller screens */
-    }
-    .col-lg-4 {
-        text-align: center; /* Centers image on smaller screens */
-    }
-}
-.navbar-nav .nav-item .nav-link {
-    color: white !important; /* Ensures all menu items are white */
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-    color: #00FF00 !important; /* Optional: Change hover color (Green in this case) */
-}
-label {
-    color: white !important;
-}
-.card-body a[href*="docs.google.com"] {
-    color: white !important;
-    text-decoration: none; /* Optional: Removes underline */
-}
-
-.card-body a[href*="docs.google.com"]:hover {
-    color: green !important;
-}
-
-
- 
-  
