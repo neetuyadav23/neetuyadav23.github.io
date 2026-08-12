@@ -1,5 +1,3 @@
-<!-- ONLY RELEVANT CHANGED PARTS ARE REFLECTED BELOW IN FULL FILE -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,6 +20,102 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* --- New additions for this revamp; move into style.css if you prefer --- */
+    .hero-section {
+      min-height: auto;
+      padding-top: 130px;
+      padding-bottom: 60px;
+    }
+    .exp-date {
+      font-size: 0.85rem;
+      color: #aaa;
+      font-weight: 400;
+    }
+
+    /* Stat badges - separated visually from CTA buttons */
+    .stat-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 2rem;
+    }
+    .stat-badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 16px;
+      border: 1px solid rgba(46, 230, 197, 0.4);
+      background: rgba(46, 230, 197, 0.06);
+      border-radius: 999px;
+      color: #2ee6c5;
+      font-size: 0.82rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+
+    /* Unified button group - filled, soft-dark teal */
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .hero-buttons .btn {
+      margin: 0;
+      padding: 10px 22px;
+      font-size: 0.9rem;
+      min-width: 130px;
+      text-align: center;
+    }
+    .btn-fill-soft {
+      background: rgba(46, 230, 197, 0.16);
+      border: 1px solid rgba(46, 230, 197, 0.55);
+      color: #eafffb;
+      border-radius: 6px;
+      transition: background 0.2s ease, border-color 0.2s ease;
+    }
+    .btn-fill-soft:hover {
+      background: rgba(46, 230, 197, 0.28);
+      border-color: rgba(46, 230, 197, 0.8);
+      color: #ffffff;
+    }
+
+    .profile-wrapper {
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: 0;
+    }
+    .profile-image {
+      width: 100%;
+    }
+
+    .project-buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+    .project-buttons a {
+      font-size: 0.9rem;
+    }
+
+    .skill-card ul {
+      padding-left: 18px;
+      margin-bottom: 0;
+      text-align: left;
+    }
+    .skill-card ul li {
+      margin-bottom: 4px;
+    }
+
+    .about-card p {
+      margin-bottom: 1.1rem;
+      line-height: 1.7;
+    }
+    .about-card p:last-child {
+      margin-bottom: 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -40,8 +134,10 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
           <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -53,26 +149,35 @@
     <div class="container">
       <div class="row align-items-center">
 
-        <div class="col-lg-7 text-center text-lg-left">
+        <div class="col-lg-8 text-center text-lg-left">
 
-          <p class="hero-tag">GenAI • Full Stack • ML • OSCode Managing Director</p>
+          <p class="hero-tag">SDE Fresher • DSA & Systems • Full Stack</p>
 
           <h1 class="hero-title">
             Hey, I'm <span>Neetu</span>
           </h1>
 
           <p class="hero-subtitle">
-            Final Year(2027 Batch) Computer Science student with hands-on experience in GenAI systems, Machine Learning, Full Stack Development,
-            and technical leadership as Managing Director at OSCode, focused on building production-ready and impactful products.
+            I'm a full-stack and systems-focused engineer who builds production-grade
+            software — RBAC-secured backends, RAG pipelines, and scalable agentic tooling.
+            I'm looking for SDE/SWE roles at companies where I can bring that same
+            engineering rigor to systems built for real scale.
           </p>
 
-          <div class="hero-buttons">
-            <a href="#projects" class="btn btn-main">Explore Projects</a>
-            <a href="https://github.com/neetuyadav23" target="_blank" class="btn btn-outline-custom">GitHub</a>
-            <a href="https://www.linkedin.com/in/neetuyadav23/" target="_blank" class="btn btn-outline-custom">LinkedIn</a>
+          <div class="stat-badges">
+            <span class="stat-badge">100+ DSA problems solved</span>
+            <span class="stat-badge">Adobe Hackathon Top 4000/2L+</span>
+            <span class="stat-badge">Goldman Sachs Hackathon Top 2000/10K</span>
           </div>
 
-          <div class="social-icons mt-5">
+          <div class="hero-buttons">
+            <a href="resume.pdf" target="_blank" class="btn btn-fill-soft">Resume</a>
+            <a href="https://github.com/neetuyadav23" target="_blank" class="btn btn-fill-soft">GitHub</a>
+            <a href="https://www.linkedin.com/in/neetuyadav23/" target="_blank" class="btn btn-fill-soft">LinkedIn</a>
+            <a href="https://leetcode.com/u/neetu88/" target="_blank" class="btn btn-fill-soft">LeetCode</a>
+          </div>
+
+          <div class="social-icons mt-4">
             <a href="https://github.com/neetuyadav23" target="_blank"><i class="ti-github"></i></a>
             <a href="https://www.linkedin.com/in/neetuyadav23/" target="_blank"><i class="ti-linkedin"></i></a>
             <a href="mailto:neetuwork888@gmail.com"><i class="ti-email"></i></a>
@@ -80,7 +185,7 @@
 
         </div>
 
-        <div class="col-lg-5 text-center mt-5 mt-lg-0">
+        <div class="col-lg-4 text-center mt-5 mt-lg-0">
           <div class="profile-wrapper">
             <img src="me.jpg" alt="profile" class="profile-image">
           </div>
@@ -97,11 +202,86 @@
         <h2>About Me</h2>
       </div>
 
-      <div class="glass-card">
-        <p>I'm a Computer Science Engineering student at Banasthali Vidyapith with interests in GenAI systems, Machine Learning, and Full Stack Development.</p>
-        <p>I've worked with tech communities like ACM and OSCode, contributed to open source programs and participated in hackathons.</p>
-        <p>I enjoy building scalable AI-driven applications and modern web experiences.</p>
+      <div class="glass-card about-card">
+        <p>
+          I'm a Computer Science Engineering student at Banasthali Vidyapith (2027 batch) with
+          a builder's mindset — I like taking systems from a blank file to something real users
+          actually touch. My work spans full-stack engineering, from RBAC-secured platforms
+          and REST APIs to applied GenAI: RAG pipelines, agentic tool orchestration with
+          LangGraph/LangChain, and retrieval systems built for real latency constraints.
+        </p>
+        <p>
+          I'm currently a Research Intern at C-DAC, architecting an EEG Analysis Agent designed
+          for research-scale data — workspace isolation, disk-backed artifact storage, and
+          reproducible experiment tracking. Before that, I worked as a Product Intern owning
+          features end-to-end for a live product, which is where I picked up the habit of asking
+          "who is this for and why" before writing a single line of code.
+        </p>
+        <p>
+          Outside of shipping, I compete — placing in the Adobe India and Goldman Sachs India
+          hackathons, and leading community initiatives at OSCode and GirlScript Summer of Code.
+          I'm now looking for SDE/SWE roles where I can bring both engineering rigor and 
+          ownership to systems built at scale.
+        </p>
       </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section-space">
+    <div class="container">
+
+      <div class="section-title text-center">
+        <h2>Experience</h2>
+      </div>
+
+      <div class="glass-card mb-4">
+        <h4>Research Intern — C-DAC, Delhi <span class="exp-date">(July 2026 – Present)</span></h4>
+        <p>
+          Architecting an EEG Analysis Agent (LangGraph, LangChain) for scale: workspace-based
+          isolation per researcher and a reference-based Artifact Store so large EEG datasets are
+          never fully loaded into memory. Designing a category-based Tool Registry and Cache
+          Manager so an 11+ tool toolkit scales without re-architecting lookup logic; integrating
+          Langfuse and MLflow for auditable, reproducible experiment tracking.
+        </p>
+      </div>
+
+      <div class="glass-card mb-4">
+        <h4>Managing Director — OSCode BV <span class="exp-date">(Jun 2026 – Present)</span></h4>
+        <p>
+          Progressed from Tech Team Member to Co-Lead to Managing Director over 2 years.
+          Organized 15–20+ online and offline events and grew chapter participation to
+          200+ members, while balancing technical leadership with community operations.
+        </p>
+      </div>
+
+      <div class="glass-card mb-4">
+        <h4>Product Intern — OSCode / Urbuddy <span class="exp-date">(Jan 2026 - Apr)</span></h4>
+        <p>
+          Owned features end-to-end for a live product used by real users — wrote PRDs and BRDs,
+          shipped features from spec to release, and used PostHog analytics to track engagement
+          and inform product decisions.
+        </p>
+      </div>
+
+      <div class="glass-card mb-4">
+        <h4>Web Developer — ACMBV Student Chapter <span class="exp-date">(Jan 2025 – Mar 2025)</span></h4>
+        <p>
+          Built a responsive site (HTML5, CSS3, Bootstrap) with 100% mobile compatibility,
+          increasing user engagement by 40% across 5+ device types. Ran a Git workflow with
+          20+ commits across a 3-person team, cutting development conflicts by 80%, while
+          shipping 3 key features and improving page load speed by 35%.
+        </p>
+      </div>
+
+      <div class="glass-card">
+        <h4>PR Lead — GirlScript Summer of Code <span class="exp-date">(Apr – Sept 2024)</span></h4>
+        <p>
+          Selected as lead from 750+ applicants; drove outreach that crossed an all-time-high
+          27K+ registrations for the program.
+        </p>
+      </div>
+
     </div>
   </section>
 
@@ -115,24 +295,48 @@
 
       <div class="row">
 
-        <div class="col-md-4 mb-4">
+        <div class="col-md-3 mb-4">
           <div class="glass-card skill-card">
-            <h4>Languages</h4>
-            <p>C, C++, Python, Java, JavaScript, HTML5, CSS3</p>
+            <h4>Frontend</h4>
+            <ul>
+              <li>React.js</li>
+              <li>HTML5, CSS3, Bootstrap</li>
+              <li>JavaScript</li>
+            </ul>
           </div>
         </div>
 
-        <div class="col-md-4 mb-4">
+        <div class="col-md-3 mb-4">
           <div class="glass-card skill-card">
-            <h4>Frameworks</h4>
-            <p>React.js, Node.js, Express.js, Bootstrap, Streamlit, Scikit-learn</p>
+            <h4>Backend</h4>
+            <ul>
+              <li>Node.js, Express.js</li>
+              <li>FastAPI</li>
+              <li>MongoDB, MySQL</li>
+              <li>JWT Auth, RBAC</li>
+            </ul>
           </div>
         </div>
 
-        <div class="col-md-4 mb-4">
+        <div class="col-md-3 mb-4">
           <div class="glass-card skill-card">
-            <h4>Databases & Tools</h4>
-            <p>MongoDB, MySQL, Git, GitHub, VS Code, Jupyter, Figma, + GenAI (LLM APIs, Prompt Engineering, RAG pipelines)</p>
+            <h4>AI / ML / GenAI</h4>
+            <ul>
+              <li>RAG, FAISS, LangChain/LangGraph</li>
+              <li>Gemini API, Prompt Engineering</li>
+              <li>Scikit-learn, TF-IDF, Semantic Search</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+          <div class="glass-card skill-card">
+            <h4>Languages & Tools</h4>
+            <ul>
+              <li>C, C++, Python, Java</li>
+              <li>Git, GitHub, Docker</li>
+              <li>VS Code, Jupyter, Figma</li>
+            </ul>
           </div>
         </div>
 
@@ -150,41 +354,58 @@
 
       <div class="row">
 
-        <!-- 1 -->
-        <div class="col-lg-6 mb-4">
-          <div class="glass-card project-card">
-            <h3>Startup Vidyapith</h3>
-            <p>
-              Full-stack MERN + ML platform connecting students, founders, and mentors with intelligent recommendation systems and community discovery.
-            </p>
-            <a href="https://startup-vidyapith-silk.vercel.app/" target="_blank">View Project →</a>
-          </div>
-        </div>
-
-        <!-- 2 NEW: CodebaseAI -->
+        <!-- 1: CodebaseAI (flagship) -->
         <div class="col-lg-6 mb-4">
           <div class="glass-card project-card">
             <h3>CodebaseAI Assistant</h3>
             <p>
-              A GenAI-powered code intelligence system that performs repository-level understanding using LLMs,
-              retrieval augmented generation (RAG), and semantic chunking to enable context-aware code querying and explanation.
+              RAG pipeline enabling natural-language querying over any public GitHub repo using
+              Gemini 2.5 Flash. AST-based chunking across 5 file formats, FAISS-indexed embeddings
+              achieving 50–90ms retrieval latency and 3s end-to-end response time. MD5-based
+              caching cuts repeat-query latency to under 0.1s. Dockerized for one-command
+              deployment.
             </p>
-            <a href="https://codebaseai-assistant.streamlit.app/" target="_blank">View Project →</a>
+            <div class="project-buttons">
+              <a href="https://codebaseai-assistant.streamlit.app/" target="_blank">View Live</a>
+              <a href="https://github.com/neetuyadav23/CodebaseAI-Assistant" target="_blank">View Code</a>
+            </div>
           </div>
         </div>
 
-        <!-- 3 -->
+        <!-- 2: Startup Vidyapith (flagship) -->
+        <div class="col-lg-6 mb-4">
+          <div class="glass-card project-card">
+            <h3>Startup Vidyapith</h3>
+            <p>
+              Full-stack RBAC platform (React, Node.js, Express, MongoDB) with JWT auth, bcrypt
+              hashing, and time-boxed, replay-safe OTP verification. Diagnosed and fixed a
+              production OOM crash by replacing transformer embeddings with a TF-IDF pipeline — a
+              deliberate accuracy-for-stability tradeoff that kept the app within free-tier memory
+              limits. Integrated an independently deployed FastAPI ML microservice via REST for
+              recommendations.
+            </p>
+            <div class="project-buttons">
+              <a href="https://startup-vidyapith-silk.vercel.app/" target="_blank">View Live</a>
+              <a href="https://github.com/neetuyadav23/StartupVidyapith" target="_blank">View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3: Sundry - no UI, code link only -->
         <div class="col-lg-6 mb-4">
           <div class="glass-card project-card">
             <h3>Sundry : Laundry Management System</h3>
             <p>
               A desktop-based management system for laundry businesses with order tracking, billing, and customer management workflows.
+              Prepared project documentation as well.
             </p>
-            <a href="https://github.com/neetuyadav23/Sundry" target="_blank">View Project →</a>
+            <div class="project-buttons">
+              <a href="https://github.com/neetuyadav23/Sundry" target="_blank">View Code</a>
+            </div>
           </div>
         </div>
 
-        <!-- 4 NEW: ML Salary Estimator -->
+        <!-- 4 -->
         <div class="col-lg-6 mb-4">
           <div class="glass-card project-card">
             <h3>ML Salary Estimator</h3>
@@ -192,11 +413,63 @@
               A machine learning regression system that predicts salary based on experience and skill features,
               deployed using Streamlit for real-time inference.
             </p>
-            <a href="https://ml-salary-estimator.streamlit.app/" target="_blank">View Project →</a>
+            <div class="project-buttons">
+              <a href="https://ml-salary-estimator.streamlit.app/" target="_blank">View Live</a>
+              <a href="https://github.com/neetuyadav23/ml-salary-estimator" target="_blank">View Code</a>
+            </div>
           </div>
         </div>
 
       </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" class="section-space">
+    <div class="container">
+
+      <div class="section-title text-center">
+        <h2>Achievements</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 mb-4">
+          <div class="glass-card">
+            <p> 1. Winner — SIH Internal Hackathon (only 2nd-year team to win)</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="glass-card">
+            <p> 2. Winner — GFG x BV Ideathon</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="glass-card">
+            <p> 3. Top 4000 / 2L+ teams — Adobe India Hackathon 2025</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="glass-card">
+            <p> 4. Top 2000 / 10K+ — Goldman Sachs India Hackathon 2026</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="glass-card">
+            <p> 5. McKinsey Forward Program 2026 Alumni · AlgoUniversity Fellowship (Stage 2)</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="glass-card">
+            <p> 6. 50 Day Streak — Matiks</p>
+          </div>
+        </div>
+        <div class="col-md-6 mb-4">
+          <div class="glass-card">
+            <p> 7. HackerRank Certified — Software Engineer Intern</p>
+          </div>
+        </div>
+      </div>
+
     </div>
   </section>
 
